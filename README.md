@@ -68,3 +68,15 @@ PORT=8080 ./run_preview.sh
 ```bash
 python3 preview_server.py
 ```
+
+
+## 🚀 Запуск сайта на GitHub Pages
+
+1. Запушьте репозиторий на GitHub.
+2. В репозитории откройте **Settings → Pages**.
+3. В поле **Source** выберите **GitHub Actions**.
+4. Запушьте изменения в ветку `main`, `master` или `work` (или запустите workflow вручную в **Actions**).
+5. После успешного workflow сайт будет доступен по адресу:
+   - `https://<ваш-логин>.github.io/<имя-репозитория>/`
+
+> В репозитории уже добавлен workflow `.github/workflows/deploy-pages.yml`, который публикует статический сайт автоматически.
