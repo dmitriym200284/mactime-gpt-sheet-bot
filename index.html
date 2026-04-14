@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НейроВремя — методология продуктивности</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121a33;
+      --text: #eef2ff;
+      --muted: #b9c1e5;
+      --accent: #67e8f9;
+      --accent-2: #a78bfa;
+      --ok: #34d399;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 10% -10%, #1f2a58 0%, transparent 65%),
+                  radial-gradient(1000px 500px at 100% 0%, #2b1f5e 0%, transparent 60%),
+                  var(--bg);
+      line-height: 1.5;
+    }
+    .wrap { width: min(1080px, 92%); margin: 0 auto; }
+    header { padding: 28px 0; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 800; letter-spacing: 0.3px; }
+    .logo span { color: var(--accent); }
+    .cta {
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 1px solid #2f3c74;
+      color: var(--text);
+      text-decoration: none;
+      background: #172143;
+    }
+    .hero { padding: 64px 0 40px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; align-items: center; }
+    h1 { font-size: clamp(32px, 6vw, 58px); line-height: 1.1; margin: 0 0 16px; }
+    .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid transparent;
+      display: inline-block;
+    }
+    .btn-primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #0a1024; }
+    .btn-ghost { border-color: #3a4a87; color: var(--text); }
+    .card {
+      background: linear-gradient(180deg, #16224a, #111a35);
+      border: 1px solid #2c3a70;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(7, 11, 24, 0.4);
+    }
+    .metric { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #2a3769; }
+    .metric:last-child { border-bottom: 0; }
+    .metric strong { color: var(--ok); }
+    section { padding: 26px 0; }
+    .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature { background: var(--card); border: 1px solid #283667; border-radius: 14px; padding: 18px; }
+    .feature h3 { margin-top: 0; }
+    footer { padding: 38px 0 58px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid3 { grid-template-columns: 1fr; }
+      header { gap: 16px; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Нейро<span>Время</span></div>
+      <a class="cta" href="#contact">Получить консультацию</a>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Превратите хаос задач в систему, которая работает на вас</h1>
+        <p class="lead">Методология «НейроВремя» помогает предпринимателям и экспертам выстроить персональный ритм: фокус, приоритеты и результат без выгорания.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Записаться на разбор</a>
+          <a class="btn btn-ghost" href="#program">Посмотреть программу</a>
+        </div>
+      </div>
+      <aside class="card">
+        <h2 style="margin-top:0">Результат за 4 недели</h2>
+        <div class="metric"><span>Потерянное время</span><strong>−35%</strong></div>
+        <div class="metric"><span>Фокусные блоки в день</span><strong>+2</strong></div>
+        <div class="metric"><span>Выполнение приоритетов</span><strong>до 90%</strong></div>
+      </aside>
+    </section>
+
+    <section id="program">
+      <h2>Что внутри методологии</h2>
+      <div class="grid3">
+        <article class="feature">
+          <h3>1. Диагностика</h3>
+          <p>Определяем ваши «утечки времени», текущую нагрузку и точки перегруза.</p>
+        </article>
+        <article class="feature">
+          <h3>2. Система</h3>
+          <p>Собираем рабочую модель планирования: неделя, день, фокус-сессии и восстановление.</p>
+        </article>
+        <article class="feature">
+          <h3>3. Закрепление</h3>
+          <p>Внедряем ритуалы, которые сохраняют темп и устойчивый результат в долгую.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2 style="margin-top:0">Готовы освободить время для главного?</h2>
+      <p>Оставьте заявку на бесплатный 30-минутный разбор. Вы получите персональный план первого шага.</p>
+      <a class="btn btn-primary" href="mailto:hello@neirovremya.ru">Оставить заявку</a>
+    </section>
+
+    <footer>
+      © НейроВремя, 2026. Посадочная страница-шаблон для быстрого старта.
+    </footer>
+  </div>
+</body>
+</html>
