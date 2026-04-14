@@ -20,6 +20,30 @@ pip install gspread oauth2client openai
 - `index.html` (основная)
 - `landing.html` (альтернативный URL)
 
+### Как открыть терминал в папке проекта
+
+**Вариант 1 (VS Code, самый удобный):**
+1. Откройте папку проекта в VS Code.
+2. Нажмите **Terminal → New Terminal**.
+3. Терминал откроется уже в папке проекта.
+
+**Вариант 2 (macOS / Linux):**
+```bash
+cd /путь/к/mactime-gpt-sheet-bot
+```
+
+**Вариант 3 (Windows PowerShell):**
+```powershell
+cd C:\путь\к\mactime-gpt-sheet-bot
+```
+
+Проверка, что вы в нужной папке:
+```bash
+pwd
+# или в Windows:
+# cd
+```
+
 ### Как запустить (самый простой способ)
 
 1. Открой терминал в папке проекта.
